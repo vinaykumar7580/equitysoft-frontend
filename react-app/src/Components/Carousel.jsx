@@ -63,7 +63,7 @@ export default function Carousel() {
               tellus pellentesque.
             </Text>
             <Flex
-              w={"70%"}
+              w={"65%"}
               justifyContent={"left"}
               alignItems={"center"}
               gap={"10px"}

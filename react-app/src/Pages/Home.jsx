@@ -15,17 +15,28 @@ import { CiSearch } from "react-icons/ci";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { PiLightbulbFilamentFill } from "react-icons/pi";
 import Carousel from "../Components/Carousel";
+import { MdOutlineMail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { RiFacebookFill } from "react-icons/ri";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { IoLogoTwitter } from "react-icons/io";
+import { FaYoutube } from "react-icons/fa";
 
 function Home() {
   return (
-    <div>
+    <div className="container">
       <Flex
         justifyContent={"space-between"}
         alignItems={"center"}
-        p={"20px 50px"}
+        p={"15px 50px"}
+        backgroundColor={"black"}
+        color="white"
       >
         <Box>
-          <Heading>Logos</Heading>
+          <Heading className="color" size={"xl"} fontFamily={"serif"}>
+            ACADEMIAN
+          </Heading>
         </Box>
         <Flex
           justifyContent={"space-between"}
@@ -86,7 +97,7 @@ function Home() {
         </Flex>
       </Flex>
 
-      <Box>
+      <Box backgroundColor={"black"} color={"white"}>
         <Box height={"700px"} position={"relative"}>
           <img
             style={{ width: "100%", height: "100%" }}
@@ -103,24 +114,37 @@ function Home() {
           top={"280px"}
           left="30px"
         >
-          <Heading size={"3xl"}>Welcome to Academian</Heading>
-          <Heading size={"lg"} mt={"30px"}>
-            The Most <span>Affordable</span>
+          <Heading className="color" fontFamily={"serif"} size={"2xl"}>
+            Welcome to Academian
           </Heading>
-          <Heading size={"lg"}>
-            learning experiance with" The Academian".
+          <Heading size={"lg"} mt={"30px"} fontWeight={"500"}>
+            The Most <span className="color">Affordable</span>
+          </Heading>
+          <Heading size={"lg"} fontWeight={"500"}>
+            learning experiance with "The Academian".
           </Heading>
           <Text mt={"20px"} fontSize={"18px"}>
             Our mission is to help people to find the best course online and
             learn with expert anytime, anywhere.
           </Text>
-          <Button mt={"50px"}>Explore Courses</Button>
+          <Box
+            mt={"50px"}
+            className="color"
+            border={"1px solid orange"}
+            p={"5px 30px"}
+            borderRadius={"5px"}
+            fontWeight={"bold"}
+            cursor={"pointer"}
+            fontSize={"18px"}
+          >
+            Explore Courses
+          </Box>
         </Box>
       </Box>
 
-      <Box p={"50px 100px"}>
-        <Box w={"65%"} m={"auto"}>
-          <Heading>Who we are</Heading>
+      <Box p={"50px 100px"} backgroundColor={"black"} color={"white"}>
+        <Box w={"65%"} m={"auto"} mt={"10px"}>
+          <Heading className="color" fontFamily={"serif"}>Who we are</Heading>
           <Text mt={"10px"}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
             ullam eum modi eos ipsum, libero aut placeat sint et repudiandae qui
@@ -142,8 +166,9 @@ function Home() {
               m={"auto"}
               p="10px"
               borderRadius={"10px"}
+              background="linear-gradient(45deg, #8B4513 0%, #FFA500 50%, #8B4513 100%)"
             >
-              <Box textAlign={"center"} margin={"auto"}>
+              <Box textAlign={"center"} margin={"auto"} color={"black"} >
                 <FaArrowTrendUp size={"40px"} />
               </Box>
             </Box>
@@ -164,8 +189,9 @@ function Home() {
               m={"auto"}
               p="10px"
               borderRadius={"10px"}
+              background="linear-gradient(45deg, #8B4513 0%, #FFA500 50%, #8B4513 100%)"
             >
-              <Box textAlign={"center"} margin={"auto"}>
+              <Box textAlign={"center"} margin={"auto"} color={"black"}>
                 <PiLightbulbFilamentFill size={"40px"} />
               </Box>
             </Box>
@@ -187,8 +213,9 @@ function Home() {
               m={"auto"}
               p="10px"
               borderRadius={"10px"}
+              background="linear-gradient(45deg, #8B4513 0%, #FFA500 50%, #8B4513 100%)"
             >
-              <Box textAlign={"center"} margin={"auto"}>
+              <Box textAlign={"center"} margin={"auto"} color={"black"}>
                 <CiSearch size={"40px"} />
               </Box>
             </Box>
@@ -211,10 +238,14 @@ function Home() {
         justifyContent={"space-between"}
         alignItems={"start"}
         p={"30px 10px"}
+        backgroundColor={"black"}
+        color={"white"}
+        mt={"50px"}
+        
       >
         <Box textAlign={"left"} w={"87%"}>
-          <Heading size={"lg"}>An Investment in knowledge pays</Heading>
-          <Heading size={"lg"}>the best Interset</Heading>
+          <Heading size={"lg"} className="color">An Investment in knowledge pays</Heading>
+          <Heading size={"lg"} className="color">the best Interset</Heading>
           <Text mt={"20px"}>
             Lorem ipsum dolor sit amet consectetur. Volutpat quam tortor nunc at
             aliquet. Sed nulla maecenas adipiscing proin. In magna fames
@@ -233,7 +264,18 @@ function Home() {
               </Radio>
             </Flex>
           </Box>
-          <Button mt={"50px"}>Discover More</Button>
+          <Box
+            mt={"50px"}
+            className="color"
+            border={"1px solid orange"}
+            p={"5px 30px"}
+            borderRadius={"5px"}
+            fontWeight={"bold"}
+            cursor={"pointer"}
+            fontSize={"18px"}
+          >
+            Discover More
+          </Box>
         </Box>
         <Box
           display={"flex"}
@@ -257,8 +299,14 @@ function Home() {
       </SimpleGrid>
 
       <SimpleGrid columns={2} gap={6} mt={"30px"} backgroundColor={"black"}>
-        <Box w={"50%"} textAlign={"left"} marginLeft={"77px"} p={"20px 10px"} color={"white"}>
-          <Heading color={"white"}>What our students have to say</Heading>
+        <Box
+          w={"50%"}
+          textAlign={"left"}
+          marginLeft={"77px"}
+          p={"20px 10px"}
+          color={"white"}
+        >
+          <Heading color={"white"} size={"lg"} className="color">What our students have to say</Heading>
           <Text mt={"20px"}>
             Lorem ipsum dolor sit amet consectetur. Volutpat quam tortor nunc at
             aliquet. Sed nulla maecenas adipiscing proin.
@@ -268,8 +316,112 @@ function Home() {
           <Carousel />
         </Box>
       </SimpleGrid>
-      <br />
-      <br />
+
+      <Box w={"95%"} m={"auto"} mt={"80px"} padding={"10px"} textAlign={"left"} color={"white"}>
+          <Heading className="color" size={"xl"} fontFamily={"serif"}>
+            ACADEMIAN
+          </Heading>
+        <SimpleGrid columns={2}>
+          <Box>
+            <Box pt={"20px"} w={"62%"}>
+              <Text>
+                Lorem ipsum dolor sit amet consectetur. Volutpat quam tortor
+                nunc at aliquet. Sed nulla maecenas adipiscing proin. In magna
+                fames faucibus quis laoreet vitae eu mi. Egestas elit nunc
+              </Text>
+
+              <Flex
+                justifyContent={"left"}
+                alignItems={"center"}
+                gap={"6px"}
+                mt={"10px"}
+              >
+                <Text>
+                  <MdOutlineMail />
+                </Text>
+                <Text>contact@company.com</Text>
+              </Flex>
+              <Flex justifyContent={"left"} alignItems={"center"} gap={"6px"}>
+                <Text>
+                  <FaPhoneAlt />
+                </Text>
+                <Text>(414) 687 - 5892</Text>
+              </Flex>
+            </Box>
+          </Box>
+          <Box>
+            <Flex justifyContent={"space-between"} alignItems={"start"}>
+              <Box lineHeight={"27px"}>
+                <Text fontWeight={"bold"}>Quick Links</Text>
+                <Text>
+                  <a href="#">About us</a>
+                </Text>
+                <Text>
+                  <a href="#">Contact us</a>
+                </Text>
+                <Text>
+                  <a href="#">Terms & Condition</a>
+                </Text>
+                <Text>
+                  <a href="#">Privacy Policy</a>
+                </Text>
+              </Box>
+              <Box lineHeight={"27px"}>
+                <Text fontWeight={"bold"}>Categories</Text>
+                <Text>
+                  <a href="#">Who we are</a>
+                </Text>
+                <Text>
+                  <a href="#">FAQ</a>
+                </Text>
+              </Box>
+              <Box lineHeight={"27px"}>
+                <Text fontWeight={"bold"}>Quick Links</Text>
+                <Text>
+                  <a href="#">Lorem ipsum dolor</a>
+                </Text>
+                <Text>
+                  <a href="#">Lorem ipsum dolor</a>
+                </Text>
+                <Text>
+                  <a href="#">Lorem ipsum dolor</a>
+                </Text>
+              </Box>
+            </Flex>
+          </Box>
+        </SimpleGrid>
+      </Box>
+
+      <Box mt={"50px"} color={"white"}>
+        <hr />
+        <SimpleGrid columns={[1, 1, 1, 2]} w={"95%"} m={"auto"} p={"10px"}>
+          <Box textAlign={"left"} pt={"4px"}>
+            <Text fontSize={"13px"}>2023 Coursy. All rights reserved</Text>
+          </Box>
+          <Flex justifyContent={"right"} align={"center"} gap={"30px"}>
+            <Text>
+              <RiFacebookFill />
+            </Text>
+            <Text>
+              <FaInstagram />
+            </Text>
+            <Text
+              backgroundColor={"orange"}
+              color={"white"}
+              p={"7px"}
+              borderRadius={"5px"}
+            >
+              <FaLinkedinIn />
+            </Text>
+            <Text>
+              <IoLogoTwitter />
+            </Text>
+            <Text>
+              <FaYoutube />
+            </Text>
+          </Flex>
+        </SimpleGrid>
+      </Box>
     </div>
   );
 }
