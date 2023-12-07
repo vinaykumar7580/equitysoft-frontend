@@ -144,7 +144,9 @@ function Home() {
 
       <Box p={"50px 100px"} backgroundColor={"black"} color={"white"}>
         <Box w={"65%"} m={"auto"} mt={"10px"}>
-          <Heading className="color" fontFamily={"serif"}>Who we are</Heading>
+          <Heading className="color" fontFamily={"serif"}>
+            Who we are
+          </Heading>
           <Text mt={"10px"}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
             ullam eum modi eos ipsum, libero aut placeat sint et repudiandae qui
@@ -168,7 +170,7 @@ function Home() {
               borderRadius={"10px"}
               background="linear-gradient(45deg, #8B4513 0%, #FFA500 50%, #8B4513 100%)"
             >
-              <Box textAlign={"center"} margin={"auto"} color={"black"} >
+              <Box textAlign={"center"} margin={"auto"} color={"black"}>
                 <FaArrowTrendUp size={"40px"} />
               </Box>
             </Box>
@@ -241,11 +243,14 @@ function Home() {
         backgroundColor={"black"}
         color={"white"}
         mt={"50px"}
-        
       >
         <Box textAlign={"left"} w={"87%"}>
-          <Heading size={"lg"} className="color">An Investment in knowledge pays</Heading>
-          <Heading size={"lg"} className="color">the best Interset</Heading>
+          <Heading size={"lg"} className="color">
+            An Investment in knowledge pays
+          </Heading>
+          <Heading size={"lg"} className="color">
+            the best Interset
+          </Heading>
           <Text mt={"20px"}>
             Lorem ipsum dolor sit amet consectetur. Volutpat quam tortor nunc at
             aliquet. Sed nulla maecenas adipiscing proin. In magna fames
@@ -306,7 +311,9 @@ function Home() {
           p={"20px 10px"}
           color={"white"}
         >
-          <Heading size={"lg"} className="color">What our students have to say</Heading>
+          <Heading size={"lg"} className="color">
+            What our students have to say
+          </Heading>
           <Text mt={"20px"}>
             Lorem ipsum dolor sit amet consectetur. Volutpat quam tortor nunc at
             aliquet. Sed nulla maecenas adipiscing proin.
@@ -317,10 +324,17 @@ function Home() {
         </Box>
       </SimpleGrid>
 
-      <Box w={"95%"} m={"auto"} mt={"80px"} padding={"10px"} textAlign={"left"} color={"white"}>
-          <Heading className="color" size={"xl"} fontFamily={"serif"}>
-            ACADEMIAN
-          </Heading>
+      <Box
+        w={"95%"}
+        m={"auto"}
+        mt={"80px"}
+        padding={"10px"}
+        textAlign={"left"}
+        color={"white"}
+      >
+        <Heading className="color" size={"xl"} fontFamily={"serif"}>
+          ACADEMIAN
+        </Heading>
         <SimpleGrid columns={2}>
           <Box>
             <Box pt={"20px"} w={"62%"}>
