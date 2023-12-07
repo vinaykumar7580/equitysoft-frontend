@@ -106,7 +106,7 @@ function Home() {
           />
         </Box>
         <Box
-          width={"47%"}
+          width={"42%"}
           textAlign={"left"}
           color={"white"}
           p={"20px"}
@@ -306,7 +306,7 @@ function Home() {
           p={"20px 10px"}
           color={"white"}
         >
-          <Heading color={"white"} size={"lg"} className="color">What our students have to say</Heading>
+          <Heading size={"lg"} className="color">What our students have to say</Heading>
           <Text mt={"20px"}>
             Lorem ipsum dolor sit amet consectetur. Volutpat quam tortor nunc at
             aliquet. Sed nulla maecenas adipiscing proin.
